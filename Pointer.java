@@ -4,6 +4,13 @@ public class Pointer {
     private int pointer;
     private int rotation;
 
+    public Pointer(int x, int y, int pointer) {
+        this.x = x;
+        this.y = y;
+        this.pointer = pointer;
+        this.rotation = 0; // Default rotation
+    }
+
     public int getX() {
         return x;
     }
@@ -32,7 +39,8 @@ public class Pointer {
         return rotation;
     }
 
-    public void setRotation(int rotation) {
+    public Pointer setRotation(int rotation) {
         this.rotation = rotation;
+        return this; // Return the current instance for method chaining
     }
 }
