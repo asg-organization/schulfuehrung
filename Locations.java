@@ -4,10 +4,14 @@ public class Locations {
     private static ArrayList<Location> locations = new ArrayList<>();
 
     public static void fillList() {
-        locations.add(new Location("Forest", "A dense forest with towering trees.", 1, "himmel.jpg"));
-        locations.add(new Location("Castle", "An ancient castle with a dark history.", 2, "castle.png"));
-        locations.add(new Location("Village", "A small village with friendly inhabitants.", 3, "village.png"));
-        // Add more locations as needed
+        // Entrance location
+        Location entrace = new Location("Eingang", "A dense forest with towering trees.", "images/entrance.jpeg");
+        ArrayList<Pointer> pointersEntrance = new ArrayList<>();
+        pointersEntrance.add(new Pointer(1, -20, -1));
+        pointersEntrance.add((new Pointer(40, -30, -2)).setRotation(-45));
+        entrace.setPointers(pointersEntrance);
+        locations.add(entrace);
+
     }
 
     public static ArrayList<Location> getLocations() {

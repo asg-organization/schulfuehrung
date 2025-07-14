@@ -117,6 +117,18 @@ implements TastenReagierbar, Ticker, MausKlickReagierbar, MausRadReagierbar, Bil
     }
     
     
+    /**
+     * Entfernt die Hintergrundgrafik des Spiels.
+     */
+    public void entferneHintergrundgrafik()
+    {
+        if ( this.hintergrundbild != null )
+        {
+            this.hintergrundbild.setzeSichtbar( false );
+            this.hintergrundbild = null;
+        }
+    }
+    
     
     
     // =====    G r a f i s c h e s   D e b u g g i n g     ==============================================
