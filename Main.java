@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Main {
-    public static int currentLocationId = 0;
+    public static int currentLocationId = 2;
     public static ArrayList<Location> locations = Locations.getLocations();
     public static SPIEL spiel = new SPIEL(false); // Disable automatic mouse support
     public static TEXT displayText = new TEXT(0, 0, 10, "");
@@ -11,7 +11,7 @@ public class Main {
         // You can create instances of classes and call methods here.
         Locations.fillList(); // Fill the locations list with predefined locations
         Arrows.setPointers(locations.get(currentLocationId).getPointers()); // Set pointers for the current location
-        spiel.setzeKamerazoom(7);
+        spiel.setzeKamerazoom(7); // Use proper zoom for coordinate system
         spiel.setzeHintergrundgrafik(locations.get(currentLocationId).getImage());
         
         // Center the text on screen (assuming 900x600 window size)

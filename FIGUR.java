@@ -1,4 +1,3 @@
-
 import ea.edu.*;
 import ea.actor.StatefulAnimation;
 
@@ -429,5 +428,16 @@ extends Figur
     public void setzeAutomatischenUebergang( String zustandVon , String zustandNach )
     {
         super.setzeAutomatischenUebergang( zustandVon , zustandNach );
+    }
+    
+    /**
+     * Setzt die Groesse (Breite und Hoehe) dieser Figur direkt in Pixeln.
+     * 
+     * @param   breite  Die neue Breite in Pixeln
+     * @param   hoehe   Die neue Hoehe in Pixeln
+     */
+    public void setzeGroesse( double breite , double hoehe ) 
+    {
+        this.getActor().setSize((float)breite, (float)hoehe);
     }
 }

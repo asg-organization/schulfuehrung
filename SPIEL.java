@@ -30,7 +30,7 @@ implements TastenReagierbar, Ticker, MausKlickReagierbar, MausRadReagierbar, Bil
      */
     private int zaehler;
     
-    private Figur hintergrundbild;
+    private FIGUR hintergrundbild;
     
     
     // =====   K o n s t r u k t o r e n   =========================================================
@@ -110,9 +110,16 @@ implements TastenReagierbar, Ticker, MausKlickReagierbar, MausRadReagierbar, Bil
         {
             this.hintergrundbild.setzeSichtbar( false );
         }
-        this.hintergrundbild = new Figur ( "hintergrund" , pfad , 1 , 1 );
+        this.hintergrundbild = new FIGUR ( "hintergrund" , pfad , 1 , 1 );
         this.hintergrundbild.setzeEbenenposition( -1 );
+        
+        // Set background size in game world coordinates (not pixels)
+        // With camera zoom 7: 900px/7 ≈ 129, 600px/7 ≈ 86
+        this.hintergrundbild.setzeGroesse(129, 86);
+        
+        // Center the background at the coordinate origin
         this.hintergrundbild.setzeMittelpunkt( 0 , 0 );
+        
         this.hintergrundbild.setzeSichtbar( true );
     }
     
