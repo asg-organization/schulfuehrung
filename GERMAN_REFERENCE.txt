@@ -1,0 +1,71 @@
+/**
+ * GERMAN TRANSLATION REFERENCE for Engine Alpha
+ * 
+ * Since Engine Alpha is a German game engine, all method names and 
+ * parameters use German terminology. Here's a reference guide for teachers:
+ */
+
+/*
+=== COMMON COLORS (Farben) ===
+"rot" = red
+"blau" = blue  
+"gruen" = green
+"gelb" = yellow
+"schwarz" = black
+"weiss" = white
+"grau" = gray
+"orange" = orange
+"violett" = purple
+"rosa" = pink
+"braun" = brown
+"hellblau" = light blue
+"dunkelblau" = dark blue
+"hellgruen" = light green
+"dunkelgruen" = dark green
+"hellrot" = light red
+"dunkelrot" = dark red
+"hellgrau" = light gray
+"dunkelgrau" = dark gray
+
+=== COMMON METHODS (Methoden) ===
+setzeFarbe() = setColor()
+setzeGroesse() = setSize()
+setzeMittelpunkt() = setCenter()
+setzeSichtbar() = setVisible()
+setzeTransparenz() = setTransparency()
+verschieben() = move()
+drehen() = rotate()
+setzeDrehwinkel() = setRotationAngle()
+
+=== KEYBOARD KEYS (Tasten) ===
+TASTE.A = A key
+TASTE.R = R key
+TASTE.ENTER = Enter key
+TASTE.LEERTASTE = Spacebar
+TASTE.PFEIL_HOCH = Up arrow
+TASTE.PFEIL_RUNTER = Down arrow
+TASTE.PFEIL_LINKS = Left arrow
+TASTE.PFEIL_RECHTS = Right arrow
+
+=== USEFUL PHRASES ===
+"Klick bei" = "Click at"
+"Taste gedrueckt" = "Key pressed"
+"sichtbar" = "visible"
+"unsichtbar" = "invisible"
+"Mittelpunkt" = "center point"
+"Drehwinkel" = "rotation angle"
+"Transparenz" = "transparency"
+
+=== EXAMPLE USAGE ===
+// Set a rectangle to light blue color
+rechteck.setzeFarbe("hellblau");
+
+// Make text visible
+text.setzeSichtbar(true);
+
+// Set transparency (0.0 = transparent, 1.0 = opaque)
+figur.setzeTransparenz(0.5f);
+
+// Move object by 10 units right, 5 units up
+figur.verschieben(10, 5);
+*/

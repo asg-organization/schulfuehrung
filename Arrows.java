@@ -5,7 +5,7 @@ import java.util.Map;
 public class Arrows {
     private static ArrayList<FIGUR> arrowPool = new ArrayList<>(); // Pool of reusable arrows
     private static ArrayList<FIGUR> activeArrows = new ArrayList<>(); // Currently visible arrows
-    private static Map<FIGUR, Integer> arrowToLocationMap = new HashMap<>(); // Maps arrows to their target locations
+    private static Map<FIGUR, String> arrowToLocationMap = new HashMap<>(); // Maps arrows to their target locations
 
     public static void setPointers(ArrayList<Pointer> pointers) {
         // Hide all currently active arrows and return them to the pool
@@ -43,14 +43,14 @@ public class Arrows {
      * Check if a click at the given coordinates hits any arrow and return the target location ID
      * @param x Click x-coordinate
      * @param y Click y-coordinate
-     * @return Target location ID if an arrow was clicked, -1 if no arrow was clicked
+     * @return Target location ID if an arrow was clicked, null if no arrow was clicked
      */
-    public static int getClickedArrowTarget(double x, double y) {
+    public static String getClickedArrowTarget(double x, double y) {
         for (FIGUR figur : activeArrows) {
             if (figur.beinhaltetPunkt(x, y)) {
                 return arrowToLocationMap.get(figur);
             }
         }
-        return -1; // No arrow was clicked
+        return null; // No arrow was clicked
     }
 }

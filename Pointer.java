@@ -1,10 +1,10 @@
 public class Pointer {
     private int x;
     private int y;
-    private int pointer;
+    private String pointer;
     private int rotation;
 
-    public Pointer(int x, int y, int pointer) {
+    public Pointer(int x, int y, String pointer) {
         this.x = x;
         this.y = y;
         this.pointer = pointer;
@@ -27,11 +27,11 @@ public class Pointer {
         this.y = y;
     }
 
-    public int getPointer() {
+    public String getPointer() {
         return pointer;
     }
 
-    public void setPointer(int pointer) {
+    public void setPointer(String pointer) {
         this.pointer = pointer;
     }
 

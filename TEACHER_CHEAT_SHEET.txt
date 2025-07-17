@@ -1,0 +1,60 @@
+QUICK GERMAN CHEAT SHEET for Engine Alpha Game Development
+Print this out for your classroom! 📚
+
+=== MOST COMMON COLORS ===
+Basic Colors:
+"rot"     - red
+"blau"    - blue  
+"gruen"   - green
+"gelb"    - yellow
+"schwarz" - black
+"weiss"   - white
+
+Light Colors:
+"hellblau"   - light blue (perfect for backgrounds!)
+"hellgruen"  - light green
+"hellrot"    - light red/pink
+"hellgrau"   - light gray
+
+Dark Colors:
+"dunkelblau"  - dark blue
+"dunkelgruen" - dark green
+"dunkelrot"   - dark red
+
+=== ESSENTIAL METHODS ===
+Appearance:
+.setzeFarbe("rot")        - Set color to red
+.setzeSichtbar(true)      - Make visible
+.setzeSichtbar(false)     - Make invisible
+.setzeTransparenz(0.5f)   - 50% transparent
+
+Position & Size:
+.setzeMittelpunkt(x, y)   - Set center position
+.setzeGroesse(width, height) - Set size
+.verschieben(deltaX, deltaY) - Move by amount
+
+Text:
+.setzeInhalt("Hello")     - Set text content
+.setzeSchriftgroesse(20)  - Set font size
+
+=== QUICK COPY-PASTE EXAMPLES ===
+
+Create a blue rectangle:
+RECHTECK rect = new RECHTECK();
+rect.setzeGroesse(50, 30);
+rect.setzeFarbe("blau");
+rect.setzeMittelpunkt(0, 0);
+
+Create yellow text:
+TEXT text = new TEXT(0, 0, 16, "Hello World");
+text.setzeFarbe("gelb");
+
+Make something semi-transparent:
+figur.setzeTransparenz(0.7f); // 70% visible
+
+=== BONUS: Common Game Messages ===
+"Spiel gestartet!" - Game started!
+"Klick hier!" - Click here!
+"Richtig!" - Correct!
+"Falsch!" - Wrong!
+"Gut gemacht!" - Well done!
